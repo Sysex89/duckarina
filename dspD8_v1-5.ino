@@ -63,7 +63,7 @@ ISR(TIMER1_COMPA_vect)
 
 // Define the array of arrays
 const uint8_t *const Tones[8] PROGMEM = {tone_0, tone_1, tone_2, tone_3, tone_4, tone_5, tone_6, tone_7};
-int buttonPins[8] = {12, 3, 4, 5, 6, 7, 8, 9}; // or byte?
+int buttonPins[8] = {2, 3, 4, 5, 6, 7, 8, 9}; // or byte?
 bool currentButtonStates[8] = {LOW, LOW, LOW, LOW, LOW, LOW, LOW, LOW};
 bool lastButtonStates[8] = {HIGH, HIGH, HIGH, HIGH, HIGH, HIGH, HIGH, HIGH};
 const int pitchPin = A0;
